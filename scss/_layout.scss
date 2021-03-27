@@ -1,0 +1,30 @@
+body {
+	/* 	background-image: url("../../images/bg-mobile.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	color: $white;
+	background-color: $veryDarkBlue;
+
+	background-size: cover;
+
+	@include breakpoint-up(medium) {
+		background-image: url("../../images/bg-desktop.png");
+		background-size: 100% 50%;
+	} */
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* h1 {
+	line-height: 3.5rem;
+} */
+
+@use "sass:math" as math;
+
+// Flexbox display
+@mixin flexbox {
+	display: flex;
+}
