@@ -156,7 +156,6 @@ $breakpoints-down: (
 	border-radius: 0.8rem;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 2rem;
-	margin: 1rem;
 	height: 100%;
 
 	&__one {
@@ -176,7 +175,7 @@ $breakpoints-down: (
 	}
 
 	&__description {
-		opacity: 0.7;
+		opacity: 0.5;
 	}
 
 	&--violet {
@@ -358,25 +357,19 @@ text-dark-blackish {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-
 	margin-bottom: 2rem;
-
 	margin-top: 7.1rem;
-	/* 	margin-bottom: 7.1rem; */
-
 	grid-template-columns: 32.7rem;
-	/* 	grid-template-rows: 44.4rem 24rem 22.2rem 38.4rem 43.8rem; */
 	grid-template-areas:
 		"card-one"
 		"card-two"
 		"card-four"
 		"card-five"
 		"card-three";
-	/* 	grid-row-gap: 2.4rem; */
+	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
 	justify-content: center;
 	align-content: center;
@@ -391,48 +384,21 @@ text-dark-blackish {
 			"card-two card-three"
 			"card-four card-four"
 			"card-five card-five";
-		grid-column-gap: 3rem;
-		grid-row-gap: 2.4rem;
 		justify-content: center;
 		align-content: center;
 		letter-spacing: 0.03px;
 	}
 
 	@include breakpoint-up(large) {
-		/* 		width: 144rem;
-		height: 90rem; */
 		display: grid;
 		grid-template-columns: repeat(4, 255px);
 		grid-template-rows: 28.2rem 26.6rem;
-		/* 		grid-template-areas: */
-		/* 			"card-one card-one card-two" */
-		/* 			"card-four card-five card-five" */
-		/* 			"card-three card-three card-three"; */
-
-		/* 			    grid-template-areas:
-        "card-one card-one card-two card-three"
-        "card-four card-five card-five card-three" */
 		grid-template-areas:
 			"card-one card-one card-two card-five"
 			"card-three card-four card-four card-five";
-		grid-column-gap: 3rem;
-		grid-row-gap: 2.4rem;
 		justify-content: center;
 		align-content: center;
-		letter-spacing: 0.03px;
 	}
-
-	/* 	display: grid;
-	grid-template-columns: repeat(4, 255px);
-	grid-template-rows: 28.2rem 26.6rem;
-	grid-template-areas:
-		"card-one card-one card-two card-three"
-		"card-four card-five card-five card-five";
-	grid-column-gap: 3rem;
-	grid-row-gap: 2.4rem;
-	justify-content: center;
-	align-content: center;
-	letter-spacing: 0.03px; */
 
 	&-3 {
 		grid-template-columns: repeat(3, 1fr);
