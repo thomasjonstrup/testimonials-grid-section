@@ -362,7 +362,8 @@ text-dark-blackish {
 	height: 100%;
 	margin-bottom: 2rem;
 	margin-top: 7.1rem;
-	grid-template-columns: 32.7rem;
+	/* 	grid-template-columns: 32.7rem; */
+	grid-template-columns: 85vw;
 	grid-template-areas:
 		"card-one"
 		"card-two"
